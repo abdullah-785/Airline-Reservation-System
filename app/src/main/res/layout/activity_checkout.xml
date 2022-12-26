@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".flights">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dip"
+        android:layout_marginTop="35dip"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="28dip"
+        android:layout_marginBottom="18dip"
+        android:text="Checkout"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dip"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dip"
+        android:background="@drawable/radius"
+        android:backgroundTint="#089082"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dip"
+            android:layout_marginTop="35dip"
+            android:background="@drawable/radius_four_side"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/paymentypes" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/radius_four_side"
+            android:paddingTop="10dip">
+
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="Account Details"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView17"
+                android:layout_marginHorizontal="20dip"
+                android:layout_marginStart="20dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginEnd="20dip"
+                android:layout_marginBottom="20dip"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/accountNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTextPersonName"
+                android:layout_marginHorizontal="20dip"
+                android:layout_marginStart="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginEnd="20dip"
+                android:layout_marginBottom="20dip"
+                android:drawableLeft="@drawable/account"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="0000 0000 0000 0000"
+                android:inputType="number"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/expireDate"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountNumber"
+                android:layout_marginHorizontal="20dip"
+                android:layout_marginStart="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginEnd="20dip"
+                android:layout_marginBottom="20dip"
+                android:drawableLeft="@drawable/date_icon"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="26/2002"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cvv"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountNumber"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="20dip"
+                android:layout_marginStart="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginEnd="20dip"
+                android:layout_marginBottom="20dip"
+                android:drawableLeft="@drawable/cvv"
+                android:drawablePadding="10dip"
+                android:ems="10"
+                android:hint="000"
+                android:inputType="number"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/radius_four_side"
+            android:paddingVertical="20dip">
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="Ticket Price"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:text="$750"
+                android:textColor="@color/black"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_marginLeft="20dip"
+                android:text="Fare Tax"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fareamont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/amount"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:text="$150"
+                android:textColor="@color/black"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fare"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="Total Amount"
+                android:textColor="@color/red"
+                android:textSize="21dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fareamont"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="20dip"
+                android:text="$900"
+                android:textColor="@color/red"
+                android:textSize="21dip"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/procceedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/radius_four_side"
+            android:backgroundTint="@color/red"
+            android:text="Procceed"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

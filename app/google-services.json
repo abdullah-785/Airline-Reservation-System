@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552859193727",
+    "project_id": "airlinereservationsystem-3c586",
+    "storage_bucket": "airlinereservationsystem-3c586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552859193727:android:45617281f308ea74ca4a4a",
+        "android_client_info": {
+          "package_name": "com.example.airlinereservationsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552859193727-32domg4ah1c5dj5547ggt0vr74bs468i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGkeeL0xtwmtLZhBIqlrlfF3fh8_lPSsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552859193727-32domg4ah1c5dj5547ggt0vr74bs468i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

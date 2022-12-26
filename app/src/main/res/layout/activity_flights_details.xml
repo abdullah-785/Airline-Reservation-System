@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flightsDetails">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dip"
+        android:layout_marginTop="30dip"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="28dip"
+        android:layout_marginBottom="18dip"
+        android:text="Flight Detials"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="23dip"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dip"
+        android:background="@drawable/radius"
+        android:backgroundTint="#089082">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="75dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emirates" />
+
+            <TextView
+                android:id="@+id/sydney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="120dip"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/syd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sydney"
+                android:layout_marginLeft="30dip"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dip"
+                android:layout_height="430dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="100dip"
+                android:layout_marginRight="10dip"
+                app:srcCompat="@drawable/fligtclass" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dip"
+                android:layout_height="35dip"
+                android:layout_below="@id/syd"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="7dip"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/kg_img" />
+
+
+            <TextView
+                android:id="@+id/distination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView4"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/startFormlondon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distination"
+                android:layout_marginLeft="30dip"
+                android:textSize="14dip"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/startFormlondon"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"
+                android:text="Depart"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/departTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depart"
+                android:layout_marginLeft="22dip"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/departTime"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"
+                android:text="Flight No"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/flightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flight"
+                android:layout_marginLeft="22dip"
+                android:textColor="@color/white"
+                android:textSize="16dip"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/travller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/flightNumber"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"
+                android:text="Flight No"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/travellerNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/travller"
+                android:layout_marginLeft="45dip"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travellerNo"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="15dip"
+                android:text="Ticket Price"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ticket"
+                android:layout_marginLeft="25dip"
+                android:textColor="@color/white"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"
+                android:layout_marginHorizontal="20dip"
+                android:layout_marginStart="30dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginEnd="30dip"
+                android:layout_marginBottom="30dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:backgroundTint="@color/red"
+                android:text="Checkout" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

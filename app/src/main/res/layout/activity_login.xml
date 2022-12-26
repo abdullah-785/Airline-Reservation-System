@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".login">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginVertical="40dip"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius"
+        android:orientation="vertical"
+        android:backgroundTint="#089082"
+        >
+
+        <ImageView
+            android:src="@drawable/login_aro"
+            android:scaleType="centerCrop"
+            android:layout_width="250dip"
+            android:layout_height="180dip"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/radius_four_side"
+            android:layout_marginHorizontal="10dip"
+            android:paddingVertical="40dip"
+
+            >
+
+            <EditText android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:hint="Email" />
+
+            <EditText android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/lock_icon"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:layout_marginHorizontal="30dip"
+                android:layout_marginTop="20dip"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dip"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an account?"
+                android:textStyle="bold"
+                android:textSize="15dip"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
